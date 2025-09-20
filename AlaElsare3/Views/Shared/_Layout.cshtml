@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AlaElsare3</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cast/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cast/bootstrap.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/Cast/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cast/style.css.map" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cast/font-awesome.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cast/style.scss" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cast/responsive.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/css/Cast/style.css" asp-append-version="true" />
+
+
+    <link rel="stylesheet" href="~/AlaElsare3.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                    <img src="~/lib/images/feature-1.png" alt="">
+                    <span class="text-uppercase fw-lighter ms-2">Talabe</span>
+                </a>
+
+                <div class="order-lg-2 nav-btns">
+                    <button type="button" class="btn position-relative">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa fa-heart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                    </button>
+                    <button type="button" class="btn position-relative">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                        </li>
+                       
+                        <li class="nav-item px-2 py-2 border-0">
+                            <a class="nav-link text-uppercase text-dark" href="#Logein">Logein</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Cast/jquery-3.6.0.js" asp-append-version="true"></script>
+    <script src="~/js/Cast/script.js" asp-append-version="true"></script>
+    <script src="~/js/Cast/bootstrap.js" asp-append-version="true"></script>
+    <script src="~/js/Cast/custom.js" asp-append-version="true"></script>
+    <script src="~/js/Cast/jquery-3.4.1.min.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
